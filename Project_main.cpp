@@ -5,7 +5,7 @@ int main(){
     starting();
     system("cls");
     cout<<"!!!This is a demo project!!!\n";
-    cout<<"Welcome to PAL!!!\nType -h to see basic system commands!!!\n\n\n";
+    cout<<"Welcome to PAL!\nType -h to see basic system commands!!!\n\n\n";
     boolean chat=TRUE;              //Khởi tao chương trình
     while(chat){
     string command;

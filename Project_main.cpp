@@ -6,11 +6,11 @@ int main(){
     system("cls");
     cout<<"!!!This is a demo project!!!\n";
     cout<<"Welcome to PAL!\nType -h to see basic system commands!!!\n\n\n";
-    boolean chat=TRUE;              //Khởi tao chương trình
+    bool chat=true;              //Khởi tao chương trình
     while(chat){
     string command;
     cout <<"Your command: ";getline(std::cin,command);fflush(stdin);    //Nhập dòng lệnh
-    if(command=="-x")chat=FALSE;else{
+    if(command=="-x")chat=false;else{
         check_command(command);         //Kiểm tra dòng lệnh với lệnh hệ thống
                                 }
     }

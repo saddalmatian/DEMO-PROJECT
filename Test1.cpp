@@ -142,7 +142,7 @@ for(int i=0;i<size;i++)
                  }     
     
 
-
+//khó vl
 //in sau khi set so
 for(int i=0;i<size;i++){
     for(int j=0;j<size;j++){

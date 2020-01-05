@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <windows.h>
 #include "TimeNow.h"
+#include "Game.h"
 using namespace std;
 void show_syscommand(){                     //Hàm hiển thị dòng lệnh hệ thống
     system("cls");
@@ -18,6 +19,7 @@ void check_command(string a){               //Hàm kiểm tra dòng lệnh nhậ
     cout<<"-s: show all the system command\n";}
     if (a=="-s")show_syscommand();
     if (a=="-t")DayTime();
+    if (a=="-g")Game();
 }   
 void starting(){                            //Hàm khởi động
     cout<<"System starting...\n";

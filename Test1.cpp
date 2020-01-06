@@ -158,43 +158,45 @@ while(alive){
         else if(sub_table[x][y]!='0')
             main_table[x][y]=sub_table[x][y];
         else{
+            int t1,t2;
             if(x==0 && y==0){
+                
                 for(t1=x;t1<x+2;t1++)
                     for(t2=y;t2<y+2;t2++)
-                        if(sub_table[t1][t2]=='0')main_table[t1][t2]=sub_table[t1][t2];
+                        main_table[t1][t2]=sub_table[t1][t2];
             }
                 
             else if(x==(size-1) && y==(size-1)){
                 for(t1=(x-1);t1<x+1;t1++)
                     for(t2=(y-1);t2<y+1;t2++)
-                        if(sub_table[t1][t2]=='0')main_table[t1][t2]=sub_table[t1][t2];
+                        main_table[t1][t2]=sub_table[t1][t2];
             }                      
                 
             else if(x==(size-1) && y==0){
                 for(t1=(x-1);t1<x+1;t1++)
                     for(t2=y;t2<y+2;t2++)
-                        if(sub_table[t1][t2]=='0')main_table[t1][t2]=sub_table[t1][t2];
+                        main_table[t1][t2]=sub_table[t1][t2];
             }
 
             else if(x==0 && y==(size-1)){
                 for(t1=x;t1<x+2;t1++)
                     for(t2=(y-1);t2<y+1;t2++)
-                        if(sub_table[t1][t2]=='0')main_table[t1][t2]=sub_table[t1][t2];
+                        main_table[t1][t2]=sub_table[t1][t2];
             }
             else if(x==0){
                 for(t1=x;t1<x+2;t1++)
                     for(t2=(y-1);t2<(y+2);t2++)
-                        if(sub_table[t1][t2]=='0')main_table[t1][t2]=sub_table[t1][t2];
+                        main_table[t1][t2]=sub_table[t1][t2];
             }
             else if(y==0){
                 for(t1=(x-1);t1<(x+2);t1++)
                     for(t2=y;t2<y+2;t2++)
-                        if(sub_table[t1][t2]=='0')main_table[t1][t2]=sub_table[t1][t2];
+                        main_table[t1][t2]=sub_table[t1][t2];
             }
             else if(x!=0 && x!=(size-1) && y!=0 && y!=(size-1)){
                 for(t1=(x-1);t1<(x+2);t1++)
                     for(t2=(y-1);t2<(y+2);t2++)
-                        if(sub_table[t1][t2]=='0')main_table[t1][t2]=sub_table[t1][t2];
+                        main_table[t1][t2]=sub_table[t1][t2];
             }
 
         }

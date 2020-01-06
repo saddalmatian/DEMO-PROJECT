@@ -1,7 +1,6 @@
 #include <math.h>
 #include <time.h>
 #include <stdlib.h>
-#include <windows.h>
 #include <iostream>
 using namespace std;
 

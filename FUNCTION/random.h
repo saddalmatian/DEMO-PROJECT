@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
-void Random(){ //Random trong khoan a den b
+void Random(){ //Random trong khoang a den b
     int a,b,amt;
     cout << "from: " << endl;
     cin >> a;
